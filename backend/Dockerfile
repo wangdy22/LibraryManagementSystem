@@ -1,11 +1,10 @@
-FROM eclipse-temurin:21-jdk
+FROM maven:3.9.11-eclipse-temurin-21
 
 WORKDIR /app
 
 COPY . .
 
-RUN chmod +x mvn
-RUN ./mvn clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 EXPOSE 8080
 
