@@ -1,0 +1,78 @@
+/* Card container */
+.card {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #333; /* darker border */
+  border-radius: 8px;
+  color: #fff;
+  background-color: #111; /* dark gray card */
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.row label {
+  font-weight: bold;
+  color: #fff; /* labels stay readable */
+}
+
+.row input {
+  padding: 8px;
+  border: 1px solid #555; /* subtle border */
+  border-radius: 6px;
+  background-color: #3a3a3a; /* dark textbox */
+  color: #fff; /* white text */
+}
+
+.row input::placeholder {
+  color: #aaa; /* lighter gray placeholder */
+}
+
+.row input:focus {
+  outline: none;
+  border-color: #f5f7fd; /* white border on focus */
+  background-color: #444; /* slightly lighter on focus */
+}
+
+/* Buttons */
+button {
+  width: 140px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px; /* Adds space between buttons */
+}
+
+/* Error messages */
+.error {
+  color: #dc2626; /* red */
+  font-size: 0.9em;
+}
+
+/* Helpful text */
+.hint {
+  color: #2380f3; /* lighter blue for hints */
+}

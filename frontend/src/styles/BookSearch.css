@@ -1,0 +1,83 @@
+.card {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.toolbar input {
+  padding: 8px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+.toolbar .userId {
+  width: 150px;
+}
+button {
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+button.secondary {
+  background: #6b7280;
+}
+button:hover {
+  filter: brightness(0.95);
+}
+.logout {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: auto; /* allows button to shrink to content */
+}
+.logout:hover {
+  background-color: #c0392b;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+.title {
+  font-weight: bold;
+}
+.author {
+  color: #666;
+  font-size: 0.9em;
+}
+.status {
+  font-size: 0.8em;
+  margin-right: 10px; /* Adds spacing between the status and the button */
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+.status.available {
+  background: #10b981;
+  color: white;
+}
+.status.borrowed {
+  background: #f59e0b;
+  color: white;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+  margin-left: 10px;
+}

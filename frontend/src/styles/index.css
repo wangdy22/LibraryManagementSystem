@@ -1,0 +1,11 @@
+/* dark mode */
+body {
+  margin: 0;
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  font-family: Arial, sans-serif;
+}
+
+.secondary-button {
+  color: #fff;
+}
